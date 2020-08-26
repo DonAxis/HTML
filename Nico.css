@@ -1,0 +1,82 @@
+/*body{
+background-image: url("https://i.pinimg.com/564x/b2/e1/29/b2e129856e987c265d4ffa652da4be6b.jpg");
+width: 75%;
+
+}*/
+
+
+h1{
+font-family: monospace;
+font-size: 50px;
+font-weight: bold;
+color: #E9373A;
+text-align: center;
+padding-top:  50px;
+
+}
+
+
+
+.anima{
+	width: 100px;
+	height: 100px;	
+	border-radius: 50%;
+	background-color: green;
+
+
+/*	transition-property: width, height;
+	transition-duration: 500ms;
+	transition-timing-function: ease;
+*/
+}
+
+.anima:hover {
+	width:200px;
+	height: 200px;
+	/* translate rotate cursiva scale*/
+transform:rotate(-25deg);
+/*: translate(55px,60px);*/
+}
+
+.anima.c{
+animation-name: nombre;
+animation-duration: 2s;
+animation-delay: 0s;
+animation-iteration-count: infinite;
+position: relative;
+}
+
+@keyframes nombre{
+	0%{
+		top:0px;
+		opacity: 1;
+	}
+	100%{
+		top:100px;
+		opacity: .5;
+	}
+}
+
+
+
+
+
+.pelota{
+	border:1px solid red;
+	position: relative;
+	width:305px;
+	height: 200px;
+	
+	/*rotacion curba posicion  tamaño*/
+	transform:rotate(25deg) translate(100px) ;
+
+}
+
+.tablita{
+	
+	border: 1px solid black;
+}
+
+
+
+
